@@ -1,0 +1,23 @@
+{
+  "author": "web4biz Consulting",
+  "name": "demo-koa",
+  "description": "Koa Demo for presentaion",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "koa.js"
+  },
+  "homepage": "http://www.web4biz.eu",
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-body": "^4.2.0",
+    "koa": "^2.6.2",
+    "koa-favicon": "^2.0.1",
+    "koa-router": "^7.4.0",
+    "mongodb": "^2.2.36",
+    "suspend": "^0.7.0"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.12.0"
+  }
+}

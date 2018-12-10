@@ -1,0 +1,19 @@
+{
+  "author": "web4biz Consulting",
+  "name": "demo-chat",
+  "description": "Chat Demo for presentaion",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "chat.js"
+  },
+  "homepage": "http://www.web4biz.eu",
+  "dependencies": {
+    "debug": "^4.1.0",
+    "express": "^4.16.4",
+    "socket.io": "^1.7.4"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.12.0"
+  }
+}

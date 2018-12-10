@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat - web4biz Consulting</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/css/standard.css" />
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript" src="/jQuery/jQuery-2.1.4.min.js"></script>
+
+    <script type="text/javascript" src="/js/client.js"></script>
+
+    <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container-fluid">
+    <div class="row top">
+        <div class="col-12">
+            <img src="/img/logo.png" />
+        </div>
+    </div>
+
+    <div class="row content">
+        <div class="col-8 col-sm-7">
+            <input type="text" class="form-control" id="nickname" placeholder="Nickname" />
+        </div>
+        <div class="col-4 col-sm-2">
+            <button class="btn btn-primary btn-sm btn-block" type="button" id="connect">Connect</button>
+        </div>
+    </div>
+
+    <div class="row noshow content">
+        <div class="col-8 col-sm-7">
+            <textarea class="form-control" rows="2" id="message" placeholder="Message"></textarea>
+        </div>
+        <div class="col-4 col-sm-2">
+            <button class="btn btn-primary btn-sm btn-block" type="button" id="send">Send</button>
+        </div>
+    </div>
+
+    <div class="row content">
+        <div class="col-12 tableBody" id="main">
+        </div>
+    </div>
+</body>
+</html>
