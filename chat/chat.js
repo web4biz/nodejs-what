@@ -13,6 +13,8 @@ let numConn     = 0;
 app.use( express.static( './client' ) );
 app.use( express.static( '../static' ) );
 
+log( 'restart' );
+
 // event for connection of socket
 io.on( 'connection', function(socket) {
 
@@ -22,7 +24,10 @@ io.on( 'connection', function(socket) {
     }
 
     numConn     += 1;
-    log( "connected", numConn, socket.nickname );
+    log( "connected", numConn );
+
+    // tell the socket to identify (for relogin after restart of node session)
+    socket.emit( "relogin", {}, login );
 
     // event for login from socket
     socket.on( "login", login );

@@ -7,6 +7,12 @@ $(window).load( function() {
     // check status
     socket	= io.connect();
 
+    socket.on( "relogin", function( data, callback ) {
+        let name    = $("#nickname").val();
+        if (name)
+            callback( name );
+    });
+
     socket.on( "newMessage", function( data ) {
         console.log( "got", data );
         message( data.name, data.msg );
